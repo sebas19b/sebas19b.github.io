@@ -10,13 +10,13 @@
     grid-column: 1/6;
     grid-row: 1/4;
 }
-.proyect{
-    background: rgb(152, 172, 165);
+.project{
+    background: gray;
     grid-column: 1/6;
     grid-row: 4/8;
 }
 .about{
-    background: blue;
+    background: rgb(255, 255, 255);
     grid-column: 1/6;
     grid-row: 8/12;
 }

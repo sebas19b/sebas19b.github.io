@@ -1,0 +1,54 @@
+.master{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 4%;
+    grid-auto-rows: minmax(100%, auto);
+}
+.home{
+    /*background: rgb(152, 172, 165);*/
+    background-image:url(../media/home/backHome1.jpg) ;
+    grid-column: 1/6;
+    grid-row: 1/4;
+}
+.proyect{
+    background: rgb(152, 172, 165);
+    grid-column: 1/6;
+    grid-row: 4/8;
+}
+.about{
+    background: blue;
+    grid-column: 1/6;
+    grid-row: 8/12;
+}
+.contact{
+    background: rgba(0, 0, 0, 0.899);
+    grid-column: 1/6;
+    grid-row: 12/16;
+}
+.home{
+    display: grid;
+    justify-content: center;/* Centrar horizontalmente */
+    align-items: center;/* Centrar verticalmente */
+    color: white;
+}
+.contact{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/*new code move link search me*/
+#contact{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100%, auto);
+}
+.align_span_linkedin{
+    grid-column: 2/3;
+}
+.align_span_github{
+    grid-column: 3/4;
+}
+.align_span_instagram{
+    grid-column: 4/5;
+}

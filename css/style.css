@@ -1,63 +1,260 @@
+/**
+    Position
+    Model box
+    typografy
+    Visual 
+    Others
+*/
+
+:root{
+    --primary-color: #0D1117;
+    --secondary-color: #161B22;
+    --blue-bright: #58A6FF;
+    --coral-hight: #F9826C;
+    --white-color: #ffffff;
+    --grey-higth: #C9D1D9;
+    --grey-medium: #8B949E;
+    --green-alert: #2EA043;
+    --red-alert: #D73A49;
+
+}
+
+/*Ajua¿sta el width y height automaticamente*/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/*Definimos 10px = 1rem*/
 html{
     font-size: 62.5%;
 }
+
+/*Hace que el scroll de la pagina sea mas fluido a los contenedores*/
 main{
-    width: 100vw;
-    height: 100vh;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
 }
-.home, .project, .about, .contact{
+
+/*Damos estilo a nombre de la barra de navegacion*/
+.container-fluid .h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+
+/*Damos estilo los items que estan dentro de la barra de navegacion*/
+.nav-item .nav-link{
+    font-size: 1.4rem;
+    font-weight: medium;
+    line-height: 1.8rem;
+}
+
+/*Dimensiona el seccion y agrega el fondo de .main--home-container*/
+.main--home-container{
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    scroll-snap-align: center;
+    background-image: url('../media/home/backHome2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Ubica y centra el titulo del home en .main--home-container*/
+.main--home-container p{
+    position: relative;
+    top: 250px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--grey-higth);
+}
+
+/*Dimensiona y agrega el fondo al contenedor .main--project-container*/
+.main--project-container{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    min-height: 115vh;
+    scroll-snap-align: center;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+/*Da estilo al titulo del contenedr project .main--project-container */
+.main--project-container h2{
+    padding-top: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--grey-higth);
+}
+
+/*Dimensiona las cartas y da estilo en el contenedor .main--project-container*/
+.project-container--card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: var(--grey-medium);
+    border-radius: 10px;
+}
+
+/*Da estilo al texto en el contenedor .main--project-container*/
+.project-container--card p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: medium;
+    line-height: 1.8rem;
+    color: var(--white-color);
+}
+
+/*Dimanciona y posiciona el boton que esta dentro de las tarjetas del contenedor .main--project-container */
+.main--project-container button{
+    position: relative;
+    width: 200px;
+    height: 25px;
+    top: 70px;
+    border: 2px solid var(--red-alert);
+    border-radius: 5px;
+}
+
+/*Dimanciona y centra el contenido de .main--about-container*/
+.main--about-container{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    min-height: 101vh;
+    scroll-snap-align: center;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+
+/*Da estilo al titulo del .main--about-container*/
+.main--about-container h2{
+    padding-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+
+/*Da estilo los parrafos del .main--about-container*/
+.main--about-container p{
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: medium;
+    line-height: 1.8rem;
+}
+
+/*Dimenciono el contanedor de las skills en .about--skills-container*/
+.about--skils-container{
+    width: 90%;
+    min-width: 288px;
+    min-height: 45px;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+/*Direcciono y centro horizontalmente el contenedor donde van las skills*/
+.skils-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+/*Dimenciono el espacio donde van las skills*/
+.skils{
+    display: block;/*Hace que el espacio se comporte como un bloque y tome sus dimenciones*/
+    width: 45px;
+    height: 45px;
+    margin: 0 .5rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*llamo a las skills por la url */
+.skils-html{
+    background-image: url('../media/aboutMe/html-5.png');
+    
+}
+.skils-css{
+    background-image: url('../media/aboutMe/css-3.png');
+}
+.skils-js{
+    background-image: url('../media/aboutMe/js.png');
+}
+.skils-github{
+    background-image: url('../media/aboutMe/github.png');
+}
+.skils-reactjs{
+    background-image: url('../media/aboutMe/react.png');
+}
+
+
+
+footer{
+    width: 100%;
+    min-width: 320px;
+    height: 30vh;
+    text-align: center;
+    background: var(--primary-color);
+    
+}
+
+.footer--contact-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.footer--contact-container table{
     width: 100%;
     height: 100%;
 }
-.home{
-    background: rgb(152, 172, 165);
-   
-}
-.project{
-    background: gray;
-    
-}
-.about{
-    background: rgb(255, 255, 255);
-    
-}
-.contact{
-    background: rgba(0, 0, 0, 0.899);
-    
+
+.footer--contact-container td{
+    width: 50%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    text-align: left;
 }
 
-.home h2{
-    display: flex;
-    justify-content: center;
-    padding: 25% 0;
-}
-strong > P{
-    font-size: 1.5rem;
-}
-.project p{
-    display: flex;
-    justify-content: center;
-    padding: 25% 5%;
-}
-.descrition-text{
-    display: flex;
-    justify-content: center;
-    padding: 12.5% 5%;
-}
-.skils{
-    list-style-type: none;
-    padding: 0 20%;
-}
-.skils li{
-    display: inline-block;
-    padding: 0 1rem;
-}
-
-.skils a{
+.footer--contact-container a{
+    color: var(--white-color);
     text-decoration: none;
+}
+.footer--contact-container .container-contact{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    margin-left: 50px;    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.contact-linkedin{
+    background-image: url('../media/contact/linkedin-icon.svg');
+}
+.contact-github{
+    padding: 5px;
+    background-image: url('../media/contact/github-icon.svg');
+}
+
+.contact-instagram{
+    background-image: url('../media/contact/instagram-icon.svg');
 }

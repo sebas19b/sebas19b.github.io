@@ -43,59 +43,75 @@
 
     <main>        
             <!--section home-->
-            <section class="home">
-                    <h2>Sebastian Barreto Florez, Front-End Developer</h2>             
+            <section id="home" class="main--home-container">
+                    <p>Sebastian Barreto Florez, Front-End Developer</p>
             </section>
             <!--section project-->
-            <section class="project">
-            <strong> 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nam esse sapiente qui autem numquam laudantium amet explicabo, quasi velit debitis blanditiis illum omnis, corporis fuga fugit reprehenderit maiores. Eum.
-                    Voluptatibus aliquid accusantium saepe ratione numquam veritatis, natus modi minima ipsum beatae? Numquam nulla atque vel dolorum ad, dolor, cumque veritatis ut quos eligendi neque modi aliquam quam. Facilis, alias!
-                    Repudiandae, excepturi et tempora ea earum similique sunt error ex possimus optio ratione magni quae at necessitatibus aspernatur nemo aliquam dicta inventore delectus quam vero numquam soluta. Nam, nesciunt officia.
-                </p>
-            </strong>
+            <section id="project" class="main--project-container">
+                <h2>My Projects</h2>
+                <section class="project-container--slider">
+                    <article class="project-container--card card-bluecoin">
+                        <p>Bluecoin</p>
+                        <button>Ir</button>
+                    </article>
+                    <article class="project-container--card">
+                        <p>Cargando..</p>
+                        <button>Ir</button>
+                    </article>
+                    <article class="project-container--card card-bottom">
+                        <p>Cargando..</p>
+                        <button>Ir</button>
+                    </article>
+                </section>
             </section>
             <!--section about-->
-            <section class="about">
-                    <section class="descrition-text">
-                        <strong>
+            <section id="about" class="main--about-container">
+                <h2>About me</h2>
+                    <section class="about--descrition-text-container">
                             <p>
                                 Systems technologist, with 6 months of experience in the area of software development 
                                 (JavaScript) and 6 months of experience in configuration and 7 semesters in systems 
                                 engineering at the American University.
                                 semesters in systems engineering at the American University.
-
+                            </p>
+                            <p>
                                 Tecnólogo en sistemas, con 6 meses de experiencia en el área de desarrollo de software 
                                 (JavaScript) y 6 meses de experiencia en configuración y 7 semestres de 
                                 en ingeniería de sistemas en la American University.
                                 semestres en ingeniería de sistemas en la Universidad Americana.
                             </p>
-                        </strong>
                     </section>
-                    <section id="aling-skils">
-                        <ul class="skils">
-                            <li><a href="#"><img src="media/aboutMe/html-5.png" alt=""></a></li>
-                            <li><a href="#"><img src="media/aboutMe/css-3.png" alt=""></a></li>
-                            <li><a href="#"><img src="media/aboutMe/js.png" alt=""></a></li>
-                            <li><a href="#"><img src="media/aboutMe/github.png" alt=""></a></li>
-                            <li><a href="#"><img src="media/aboutMe/react.png" alt=""></a></li>
-                            <li><a href="#"><img src="media/aboutMe/bootstrap.png" alt=""></a></li>
+                    <section class="about--skils-container">
+                        <ul class="skils-container">
+                            <li><span class="skils skils-html"></span></li>
+                            <li><span class="skils skils-css"></span></li>
+                            <li><span class="skils skils-js"></span></li>
+                            <li><span class="skils skils-github"></span></li>
+                            <li><span class="skils skils-reactjs"></span></li>
                         </ul>
                     </section>
             </section>
-            <!--section contact-->
-            <section class="contact" >
-                <span class="align-span-linkedin"><a href="https://www.linkedin.com/in/sebastian-barreto-florez-38b24422a/" target="_blank"><img src="media/contact/linkedin.png" alt=""></a></span>
-                <span class="align-span-github"><a href="http://www.github.com/sebas19b" target="_blank"><img src="media/contact/github.png"  alt=""></a></span>
-                <span class="align-span-instagram"><a href="http://www.instagram.com/sebas_barretof" target="_blank"><img src="media/contact/instagram.png" alt=""></a></span>
-            </section>
-        
     </main>
 
     <footer>
-
+          <!--section contact-->
+          <section id="contact" class="footer--contact-container" >
+            <table>
+                <tr>
+                    <td><span class="container-contact contact-linkedin"></span></td>
+                    <td><a href="https://www.linkedin.com/in/sebastian-barreto-florez-38b24422a/" target="_blank">Linkedin</a></td>
+                </tr>
+                <tr>                    
+                    <td><span class="container-contact contact-github"></span></td>
+                    <td><a href="http://www.github.com/sebas19b" target="_blank">Git hub</a></td>
+                </tr>
+                <tr>
+                    <td> <span class="container-contact contact-instagram"></span></td>
+                    <td><a href="http://www.instagram.com/sebas_barretof" target="_blank">Instagram</a></td>
+                </tr>
+            </table>
+        </section>
     </footer>
 </body>
-<script src="script/script.js"></script>
+<!--<script src="script/script.js"></script>-->
 </html>

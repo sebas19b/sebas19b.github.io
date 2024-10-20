@@ -30,7 +30,9 @@
 html{
     font-size: 62.5%;
 }
-
+header .bg-dark{
+    background-color: var(--primary-color);
+}
 /*Hace que el scroll de la pagina sea mas fluido a los contenedores*/
 main{
     overscroll-behavior-y: contain;

@@ -55,7 +55,7 @@ main{
 .main--home-container{
     width: 100%;
     min-width: 320px;
-    height: 100vh;
+    height: 510px;
     scroll-snap-align: center;
     background-image: url('../media/home/backHome2.jpg');
     background-position: center;
@@ -79,7 +79,7 @@ main{
     position: relative;
     width: 100%;
     min-width: 320px;
-    min-height: 115vh;
+    min-height: 590px;
     scroll-snap-align: center;
     background-color: var(--secondary-color);
     text-align: center;
@@ -130,7 +130,7 @@ main{
     position: relative;
     width: 100%;
     min-width: 320px;
-    min-height: 101vh;
+    min-height: 500px;
     scroll-snap-align: center;
     margin: 0 auto;
     padding: 15px;
@@ -204,7 +204,7 @@ main{
 footer{
     width: 100%;
     min-width: 320px;
-    height: 30vh;
+    height: 155px;
     text-align: center;
     background: var(--primary-color);
     

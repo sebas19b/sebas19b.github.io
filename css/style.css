@@ -32,8 +32,7 @@ html{
 }
 
 /**
-Cambie el color de la barra de navegacion desde el css con !important
-tambien elimine el estilo envevido que le habia agregado en el html
+Cambie el color de la barra de navegacion desde el css con !important tambien elimine el estilo envevido que le habia agregado en el html
 */
 header .bg-dark{
     background-color: var(--primary-color) !important;
@@ -109,8 +108,22 @@ main{
     height: 150px;
     margin: 20px auto;
     padding: 15px;
-    background-color: var(--grey-medium);
     border-radius: 10px;
+}
+
+.card-bluecoin{
+    width: 100%;
+    background-image: url("../media/proyect/bluecoin.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-danke{
+    background-image: url("../media/proyect/danke.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*Da estilo al texto en el contenedor .main--project-container*/
@@ -128,8 +141,14 @@ main{
     width: 200px;
     height: 25px;
     top: 70px;
-    border: 2px solid var(--red-alert);
+    background: #ffffff21;
+    border: #ffffff00 0.5px;
     border-radius: 5px;
+}
+
+.main--project-container button:hover{
+    background: #ffffff50;
+    transition: 1.1s;
 }
 
 /*Dimanciona y centra el contenido de .main--about-container*/

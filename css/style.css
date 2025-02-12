@@ -126,6 +126,13 @@ main{
     background-repeat: no-repeat;
 }
 
+.card-todoList{
+	background-image: url("../media/proyect/todo.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 /*Da estilo al texto en el contenedor .main--project-container*/
 .project-container--card p{
     text-align: center;

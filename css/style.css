@@ -145,18 +145,13 @@ main{
 /*Dimanciona y posiciona el boton que esta dentro de las tarjetas del contenedor .main--project-container */
 .main--project-container button{
     position: relative;
-    width: 200px;
-    height: 25px;
-    top: 70px;
-    background: #ffff;
-    border: #ffffff00 0.5px;
-    border-radius: 3px;
+    width: 100%;
+    height: 100%;    
+    background: #ffffff00;
+    border: #ffffff00 ;
 }
 
-.main--project-container button:hover{
-    background: #ffffff50;
-    transition: 1.1s;
-}
+
 
 /*Dimanciona y centra el contenido de .main--about-container*/
 .main--about-container{
